@@ -1,46 +1,9 @@
-# FsFrontend
+# Unser modernes Hamburg - seit 1909
+The project is about the architect, urban developer and visionary Fritz Schumacher and other architects from the 20th century. We used for the start 1210 high-resolution pictures from around 1920. Digitalised and released under open data license by the Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky. 
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+##Data
+More information about the data you will find here: 
+https://codingdavinci.de/daten/#carl-von-ossietzky
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
-
-
-HACKS TO PACKAGES USED:
-
-@angular2/material/tooltip/tooltip.js
-// MY HACK YO
-MdTooltip.prototype.ngOnDestroy = function () {
-    this._overlayRef.dispose();
-    this._overlayRef = null;
-};
-
-(overlay.scss and theme.scss)
-search for md-overlay-container and remove z-index
+##A Coding Da Vinci Nord - Project##
+This project is founded at the Coding Da Vinci Nord Project in September 2016. More Informaitons about the cultural hackathon here: codingdavinci.de/nord

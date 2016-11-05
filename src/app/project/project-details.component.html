@@ -1,0 +1,8 @@
+<!-- <button md-button  md-tooltip="Zurück zur Übersicht" routerLink="/karte"><md-icon>keyboard_backspace</md-icon></button> -->
+<md-card *ngIf="dataService.selectedProject">
+    <h1>{{dataService.selectedProject.name}}</h1>
+    <p>
+      {{dataService.selectedProject.description}}
+    </p>
+</md-card>
+<wbc-gallery [project]="dataService.selectedProject"></wbc-gallery>

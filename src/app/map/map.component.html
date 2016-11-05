@@ -1,0 +1,14 @@
+<md-sidenav-layout>
+    <div id="map"></div>
+    <!-- <wbc-search-field></wbc-search-field> -->
+
+    <wbc-marker *ngFor="let project of dataService.projectsArray | projectFilter: dataService.searchTerm" [project]="project" [wbcSidenav]="wbcSidenav">
+    </wbc-marker>
+
+    <md-sidenav id="wbc-sidenav" align="end" mode="side" #wbcSidenav class="md-elevation-z8" (close)="returnToNormalView()" (open)="sidenavOpen()">
+        <button md-button (click)="wbcSidenav.close()" md-tooltip="Sidebar schliessen"><md-icon>close</md-icon></button>
+        <router-outlet></router-outlet>
+    </md-sidenav>
+
+</md-sidenav-layout>
+

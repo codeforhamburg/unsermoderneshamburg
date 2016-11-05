@@ -1,0 +1,35 @@
+// import Material Icons & Theme
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+// @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wbc-secondary-text {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+// .md-overlay-container {
+// }
+
+.md-dialog-container {
+    // background: none;
+    max-width: 500px;
+    // height: 420px;
+    background-image: url(https://farm6.staticflickr.com/5495/30579468682_4b92110567.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    &.wbc-tab-0 {
+        background-image: url(https://farm6.staticflickr.com/5495/30579468682_4b92110567.jpg);
+    }  
+    &.wbc-tab-1 {
+        background-image: url(https://farm6.staticflickr.com/5789/30578535802_3563d83ac4.jpg);
+    }  
+    &.wbc-tab-2 {
+        background-image: url( https://farm6.staticflickr.com/5763/30693988846_ff0eec8989.jpg);
+    }
+}

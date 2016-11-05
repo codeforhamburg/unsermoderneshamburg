@@ -1,0 +1,14 @@
+.wbc-dialog-tab {
+    height: 365px;
+    .wbc-tab-overlay-top {
+        background: rgba(255,255,255,0.8);
+        width: 100%;
+    }
+    .wbc-tab-overlay-bot {
+        background: rgba(255,255,255,0.8);
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+    }
+
+}

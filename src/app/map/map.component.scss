@@ -1,0 +1,42 @@
+md-sidenav-layout {
+    height: 100%;
+}
+
+md-sidenav {
+    width: 50%;
+}
+
+
+#map {
+    height: 100%;
+    width: 100%;    
+}
+
+.wbc-marker {
+    cursor: pointer;
+}
+
+wbc-search-field {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+    background-color: white;
+}
+
+.mapboxgl-popup-content {
+    padding: 0px;
+
+    .wbc-popup-card {
+        width: 220px;
+        padding-top: 0px;
+
+        img {
+            max-height: 200px;
+        }
+        
+        [md-card-image]:first-child {
+            margin-top: 0px;
+        }
+    }
+    
+}

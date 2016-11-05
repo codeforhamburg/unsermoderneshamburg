@@ -1,0 +1,87 @@
+@import '~@angular/material/core/theming/all-theme';
+// Plus imports for other components in your app.
+
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include md-core();
+
+
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+$wbc-red-base: #8C1B11;
+$wbc-green-base: #1C806C;
+
+$wbc-red: (
+  50: lighten($wbc-red-base, 25%),
+  100: lighten($wbc-red-base, 20%),
+  200: lighten($wbc-red-base, 15%),
+  300: lighten($wbc-red-base, 10%),
+  400: lighten($wbc-red-base, 5%),
+  500: $wbc-red-base,
+  600: darken($wbc-red-base, 5%),
+  700: darken($wbc-red-base, 10%),
+  800: darken($wbc-red-base, 15%),
+  900: darken($wbc-red-base, 20%),
+  A100: blue,
+  A200: blue,
+  A400: blue,
+  A700: blue,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$wbc-green: (
+  50: lighten($wbc-green-base, 25%),
+  100: lighten($wbc-green-base, 20%),
+  200: lighten($wbc-green-base, 15%),
+  300: lighten($wbc-green-base, 10%),
+  400: lighten($wbc-green-base, 5%),
+  500: $wbc-green-base,
+  600: darken($wbc-green-base, 5%),
+  700: darken($wbc-green-base, 10%),
+  800: darken($wbc-green-base, 15%),
+  900: darken($wbc-green-base, 20%),
+  A100: blue,
+  A200: blue,
+  A400: blue,
+  A700: blue,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: $black-87-opacity,
+  )
+);
+
+$wbc-primary : md-palette($wbc-red);
+$wbc-accent: md-palette($wbc-green);
+
+
+$wbc-app-theme-light: md-light-theme($wbc-primary, $wbc-accent);
+
+
+@include angular-material-theme($wbc-app-theme-light);

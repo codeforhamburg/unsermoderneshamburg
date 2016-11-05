@@ -29,3 +29,18 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+
+HACKS TO PACKAGES USED:
+
+@angular2/material/tooltip/tooltip.js
+// MY HACK YO
+MdTooltip.prototype.ngOnDestroy = function () {
+    this._overlayRef.dispose();
+    this._overlayRef = null;
+};
+
+(overlay.scss and theme.scss)
+search for md-overlay-container and remove z-index

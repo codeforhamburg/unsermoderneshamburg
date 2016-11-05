@@ -1,0 +1,6 @@
+<div id="wbc-search-field-container" class="md-elevation-z2">
+    <md-input [(ngModel)]="dataService.searchTerm" placeholder="Suche">
+        <md-icon md-prefix>search</md-icon>
+    </md-input>
+    {{wbcListFilter}}<button md-button (click)="dataService.searchTerm=''"><md-icon>close</md-icon></button>
+</div>

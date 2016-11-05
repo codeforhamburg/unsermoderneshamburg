@@ -1,3 +1,25 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color='primary' class="md-elevation-z4 wbc-toolbar">
+    <p>
+    <span i18n>
+        Unser Modernes Hamburg 
+    </span><br>
+    <span class="wbc-underline">
+        Fritz Schumacher | Architekt | Stadtentwickler | Visionär | 1909 - 1933
+    </span>
+    </p>
+    <span class="wbc-fill-remaining-space"></span>
+
+    <button md-icon-button [md-menu-trigger-for]="menu">
+        <md-icon>more_vert</md-icon>
+    </button>
+    <md-menu x-position="before" #menu="mdMenu" class="wbc-menu md-elevation-z8">
+        <button md-menu-item routerLink='karte' i18n>Karte</button>
+        <button md-menu-item routerLink='fritz-schumacher' i18n>Schumacher</button>
+        <button md-menu-item i18n>Liste</button>
+    </md-menu>
+
+</md-toolbar>
+<div id="wbc-content">
+    <router-outlet></router-outlet>
+</div>
+

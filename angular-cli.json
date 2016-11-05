@@ -15,9 +15,15 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.scss",
+        "theme.scss",
+        "../node_modules/mapbox-gl/dist/mapbox-gl.css",
+        "../node_modules/material-photo-gallery/dist/css/material-photo-gallery.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/mapbox-gl/dist/mapbox-gl.js",
+        "../node_modules/material-photo-gallery/dist/js/material-photo-gallery.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -38,7 +44,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false
   }
 }

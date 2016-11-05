@@ -1,0 +1,25 @@
+.wbc-underline {
+    font-size: 0.6em;
+}
+
+.wbc-fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.wbc-toolbar {
+    z-index: 4;
+    position: relative;
+}
+
+.wbc-menu {
+    z-index: 8;
+}
+
+#wbc-content {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+

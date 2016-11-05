@@ -55,7 +55,6 @@ export class MapComponent implements OnInit {
 
                 })
             }
-            console.log(pictures);
             for (var i = 0; i < pictures.length; i++) {
 
                 pictures[i].addEventListener('click', myFunction, false);

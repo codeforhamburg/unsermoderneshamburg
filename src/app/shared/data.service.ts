@@ -13,7 +13,6 @@ export class DataService {
   public searchTerm = '';
   
   constructor(private http: Http) { 
-      console.log('const');
       this.projects = this.getFsData();
       this.imageData = this.getImageData();
   }

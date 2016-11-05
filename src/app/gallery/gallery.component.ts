@@ -47,7 +47,6 @@ export class GalleryComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges){
-        console.log(changes);
          this.images = this.dataService.getImageData()[(this.project.id)];
         //  var that = this;
         // console.log(this.images)

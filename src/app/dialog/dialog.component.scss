@@ -1,8 +1,16 @@
+@import '~@angular/material/core/theming/all-theme';
+
 .wbc-dialog-tab {
     height: 365px;
     .wbc-tab-overlay-top {
         background: rgba(255,255,255,0.8);
         width: 100%;
+        // h1 {
+        //     color: md-color(map-get($theme, primary));
+        // }
+        // p {
+        //     color: md-color(map-get($theme, accent));
+        // }
     }
     .wbc-tab-overlay-bot {
         background: rgba(255,255,255,0.8);

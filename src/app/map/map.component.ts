@@ -5,6 +5,7 @@ import { Project } from '../project';
 import { MdDialogRef, MdDialog, MdDialogConfig } from '@angular/material';
 import { DialogComponent } from '../dialog';
 // import * as MaterialPhotoGallery from 'material-photo-gallery';
+declare var MaterialPhotoGallery:any;
 
 @Component({
   selector: 'app-map',
@@ -38,8 +39,6 @@ export class MapComponent implements OnInit {
       this.mapService.resetView();
     }
     sidenavOpen() {
-      console.log("sidenav open");
-      console.log(MaterialPhotoGallery)
       setTimeout(function(){
             var elem = document.querySelector('.m-p-g');
             var gallery = new MaterialPhotoGallery(elem);
@@ -62,7 +61,7 @@ export class MapComponent implements OnInit {
                 pictures[i].addEventListener('click', myFunction, false);
             }
 
-        }, 1000)
+        }, 500)
     }
 
     ngOnInit() {
@@ -126,8 +125,6 @@ export class MapComponent implements OnInit {
         //   that.mapService.clickedPopup = undefined;
         // }
       })
-
-      window.map = this.mapService.map;
   }
 
 }

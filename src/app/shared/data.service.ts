@@ -9,7 +9,7 @@ export class DataService {
   public projects;
   public imageData;
   public projectsArray: Project[] = [];
-  public selectedProject = {};
+  public selectedProject: Project = {};
   public searchTerm = '';
   
   constructor(private http: Http) { 
